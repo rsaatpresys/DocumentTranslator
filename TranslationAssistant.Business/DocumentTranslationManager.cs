@@ -772,17 +772,17 @@ namespace TranslationAssistant.Business
                 OpenXmlPowerTools.SimplifyMarkupSettings settings = new OpenXmlPowerTools.SimplifyMarkupSettings
                 {
                     AcceptRevisions = true,
-                    NormalizeXml = true,
-                    RemoveComments = true,
-                    RemoveBookmarks = true,
-                    RemoveEndAndFootNotes = true,
-                    RemoveFieldCodes = true,
-                    RemoveGoBackBookmark = true,
-                    RemoveMarkupForDocumentComparison = true,
+                    NormalizeXml = false,
+                    RemoveComments = false,
+                    RemoveBookmarks = false,
+                    RemoveEndAndFootNotes = false,
+                    RemoveFieldCodes = false,
+                    RemoveGoBackBookmark = false,
+                    RemoveMarkupForDocumentComparison = false,
                     RemoveProof = true,
-                    RemoveRsidInfo = true,
-                    RemoveSmartTags = true,
-                    RemoveSoftHyphens = true
+                    RemoveRsidInfo = false,
+                    RemoveSmartTags = false,
+                    RemoveSoftHyphens = false
                 };
                 OpenXmlPowerTools.MarkupSimplifier.SimplifyMarkup(doc, settings);
             }
